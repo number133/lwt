@@ -54,6 +54,10 @@ $phrase = mb_strtolower(trim(stripTheSlashesIfNeeded($_REQUEST["phrase"])), 'UTF
 $ok = FALSE;
 $trn_data = array();
 
+//$res = array();
+//exec("java -Dfile.encoding=UTF-8 -jar D:\\Projects4\\snowball\\target\\snowball-1.0-SNAPSHOT-jar-with-dependencies.jar " . $phrase, $res);
+//$dest = $res[0];
+
 pagestart_nobody('');
 //http://tureng.com/en/turkish-english/ucuz
 $titletext = '<a href="http://tureng.com/en/' . $from . '-' . $dest . '/' . $phrase . '">Tureng Dictionary (' . tohtml($from) . "-" . tohtml($dest) . "):  &nbsp; <span class=\"red2\">" . tohtml($phrase) . "</span></a>";
